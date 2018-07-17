@@ -1,6 +1,6 @@
-# course_arrange_fe
+# 
 
-> A Vue.js project
+> course_arrange
 
 ## Build Setup
 
