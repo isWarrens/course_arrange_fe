@@ -32,7 +32,7 @@ export default {
 }
 </script>
 <style>
-body{
+body {
   width: 100%;
 }
 </style>

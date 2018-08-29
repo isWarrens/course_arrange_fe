@@ -5,13 +5,21 @@ import router from './router'
 import dispacher from '@/pages/dispacher'
 import iView from 'iview'
 import 'iview/dist/styles/iview.css'
+import Vuex from 'vuex'
+import store from './vuex/store'
+import axios from 'axios'
+import mock from './mock'
+
 
 Vue.config.productionTip = false
 Vue.use(iView)
+Vue.use(Vuex)
+Vue.prototype.$ajax = axios;
 
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
+  store,
   router,
   components: { dispacher },
   template: '<dispacher/>'

@@ -17,7 +17,7 @@
             </Input>
           </FormItem>
           <FormItem align="center">
-            <Button type="primary" @click="handleSubmit('formInline')" long class="button">登录</Button>
+            <Button type="primary" shape="circle" @click="handleSubmit('formInline')" long class="button">登录</Button>
           </FormItem>
         </Form>
         <div class="footer_container">

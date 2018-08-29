@@ -7,8 +7,8 @@ export default {
     return {
       columns7: [
         {
-          title: 'Name',
-          key: 'name',
+          title: '工号',
+          key: 'num',
           render: (h, params) => {
             return h('div', [
               h('Icon', {
@@ -21,15 +21,15 @@ export default {
           }
         },
         {
-          title: 'Age',
-          key: 'age'
+          title: '教师',
+          key: 'teacher'
         },
         {
-          title: 'Address',
-          key: 'address'
+          title: '密码',
+          key: 'passwd'
         },
         {
-          title: 'Action',
+          title: '指令',
           key: 'action',
           width: 150,
           align: 'center',
@@ -66,29 +66,29 @@ export default {
       ],
       data6: [
         {
-          name: 'John Brown',
-          age: 18,
-          address: 'New York No. 1 Lake Park'
+          num:"8503",
+          teacher:"饶泓",
+          passwd: '0297'
         },
         {
-          name: 'Jim Green',
-          age: 24,
-          address: 'London No. 1 Lake Park'
+          num:"8503",
+          teacher:"饶泓",
+          passwd: '0297'
         },
         {
-          name: 'Joe Black',
-          age: 30,
-          address: 'Sydney No. 1 Lake Park'
+          num:"8503",
+          teacher:"饶泓",
+          passwd: '0297'
         },
         {
-          name: 'Jon Snow',
-          age: 26,
-          address: 'Ottawa No. 2 Lake Park'
+          num:"8503",
+          teacher:"饶泓",
+          passwd: '0297'
         },
         {
-          name: 'Jon Snow',
-          age: 26,
-          address: 'Ottawa No. 2 Lake Park'
+          num:"8503",
+          teacher:"饶泓",
+          passwd: '0297'
         }
       ]
     }
@@ -97,7 +97,7 @@ export default {
     show(index) {
       this.$Modal.info({
         title: 'User Info',
-        content: `Name：${this.data6[index].name}<br>Age：${this.data6[index].age}<br>Address：${this.data6[index].address}`
+        content: `工号：${this.data6[index].num}<br>教师：${this.data6[index].teacher}<br>密码：${this.data6[index].passwd}`
       })
     },
     remove(index) {

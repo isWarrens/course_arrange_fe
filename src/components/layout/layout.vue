@@ -18,10 +18,15 @@
     height: 650px;
     width: 100%;
   }
-
+  .logo{
+    float: left;
+    width:250px;
+    line-height: 70px;
+  }
 </style>
 <template>
   <div class="layout">
+    <Header :style="{backgroundColor:'#49507F'}"><div class="logo">后台管理系统</div></Header>
     <Sider  :style="{position: 'fixed', height: '100vh', left: 0, overflow: 'auto'}">
       <Menu theme="dark" width="auto">
         <Submenu name="1">
@@ -65,9 +70,9 @@
         </Submenu>
       </Menu>
     </Sider>
-    <Layout :style="{marginLeft: '200px'}">
-      <Content :style="{padding: '0 16px 16px'}">
-        <Breadcrumb :style="{margin: '16px 0'}">
+    <Layout :style="{marginLeft: '20px'}">
+      <Content :style="{padding: '16px 16px 16px 16px'}">
+        <Breadcrumb :style="{margin: '16px'}">
         </Breadcrumb>
         <Card>
           <div class="content">
@@ -81,5 +86,4 @@
   </div>
 </template>
 <script>
-
 </script>
